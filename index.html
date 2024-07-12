@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고도 측정 앱</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+    <div class="container">
+        <h1>고도 측정 앱</h1>
+        <div id="altitude">고도: -- 미터</div>
+        <button id="measureBtn">고도 측정</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+              }).catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+              });
+        }
+    </script>
+</body>
+</html>
