@@ -1,0 +1,16 @@
+{
+    "name": "고도 측정 앱",
+    "short_name": "고도 앱",
+    "description": "현재 위치의 고도를 측정하는 앱",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
